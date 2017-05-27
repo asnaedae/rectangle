@@ -4,11 +4,8 @@ class box:
     def __init__(self, x1, y1, x2, y2):
         """ only handle case where object points are min(x,y) to max(x,y)
         error if this is not the case."""
-        if x1 > x2:
+        if x1 > x2 or y1 > y2:
             raise ValueError("x1y1 must be smaller than x2y2")
-        if  y1 > y2:
-            print("foo %d %d" %(y1, y2))
-            raise ValueError("foo")
         self.x1 = x1
         self.y1 = y1
         self.x2 = x2
