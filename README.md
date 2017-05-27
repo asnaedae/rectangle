@@ -30,6 +30,7 @@ pip install unittest
 ```
 
 Usage:
+-----
 
 Simple usage would be to apply the python interpreter to ``rectangle.py``, e.g:
 
